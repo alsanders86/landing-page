@@ -4,6 +4,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
+    justify-content: center;
 }
 
 header {
@@ -12,13 +13,12 @@ header {
     justify-content: space-around;
     border-color: red;
     border-width: 10px;
-    /* margin: 10px; */
     padding: 10px;
 }
 
 .header-links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 16px;
 }
 
@@ -33,25 +33,47 @@ header, footer, .hero  {
 
 .hero {
     display: flex;
-    justify-content: space-around;
-    padding: 32px;
+    justify-content: center;
+    gap: 24px;
+    height: 300px;
+    padding-top: 100px;
 }
 
 .left {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    flex: 0 1 auto;
+    width: 600px;
+    height: 200px;
 }
 
-.hero h1 {
+.left button {
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    flex: 0 0 auto;
+    cursor: pointer;
+    border-width: 0px;
+    border-color: #3882F6;
+    margin-top: 10px;
+}
+
+.hero-main-text {
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
 }
 
 .image-placeholder {
+    display: flex;
     background-color: gray;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    flex: 0 1 auto;
+    width: 600px;
+    height: 200px;
 }
 
 .hero, header a {
@@ -68,6 +90,32 @@ button, .call-to-action {
     color: #F9FAF8;
 }
 
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 16px;
+}
+
+.image-block {
+    text-align: center;
+    margin: 15px;
+}
+
+.image {
+    border: 3px solid #3882F6;
+    border-radius: 20px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
 .info h2 {
     font-size: 36px;
     font-weight: bolder;
@@ -76,6 +124,7 @@ button, .call-to-action {
 
 .quote-block {
     background-color: #E5E7EB;
+    padding: 50px 450px;
 }
 
 .quote-block p {
@@ -88,6 +137,25 @@ button, .call-to-action {
     font-weight: bolder;
 }
 
+.call-to-action {
+    margin: 24px;
+}
+
+.call-to-action button {
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    flex: 0 0 auto;
+    cursor: pointer;
+    border-width: 2px;
+    border-color: #3882F6;
+    margin-top: 10px;
+    border-color: #F9FAF8;
+    border-style: solid;
+}
+
 footer {
     color: #F9FAF8;
+    padding: 24px;
+    text-align: center;
 }
