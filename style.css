@@ -37,6 +37,8 @@ header, footer, .hero  {
     gap: 24px;
     height: 300px;
     padding-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .left {
@@ -44,7 +46,7 @@ header, footer, .hero  {
     flex-direction: column;
     justify-content: space-around;
     flex: 0 1 auto;
-    width: 600px;
+    width: 550px;
     height: 200px;
 }
 
@@ -72,7 +74,7 @@ header, footer, .hero  {
     align-items: center;
     text-align: center;
     flex: 0 1 auto;
-    width: 600px;
+    width: 550px;
     height: 200px;
 }
 
@@ -91,10 +93,11 @@ button, .call-to-action {
 }
 
 .info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+    text-align: center;
 }
 
 .info-blocks {
@@ -102,11 +105,14 @@ button, .call-to-action {
     justify-content: center;
     align-items: center;
     padding-bottom: 16px;
+    flex: 1 1 auto;
 }
 
 .image-block {
     text-align: center;
     margin: 15px;
+    width: 200px;
+    flex: 0 1 auto;
 }
 
 .image {
@@ -123,22 +129,58 @@ button, .call-to-action {
 }
 
 .quote-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #E5E7EB;
-    padding: 50px 450px;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    padding-left: 150px;
+    padding-right: 150px;
 }
 
-.quote-block p {
+.quote {
+    display: flex;
+    flex-direction: column;
+    width: 850px;
+}
+
+.quote-text {
     font-size: 36px;
     font-style: italic;
     color: #1F2937;
+    flex: 1 1 auto;
 }
 
-.quote-block div {
-    font-weight: bolder;
+.quote-person {
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.call-to-action-block {
+    display: flex;
+    justify-content: center;
 }
 
 .call-to-action {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1000px;
     margin: 24px;
+    border-radius: 5px;
+    padding: 16px;
+}
+
+.call-to-action-text {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+}
+
+#call-to-action-header {
+    font-weight: bold;
+    margin-bottom: 5px;
 }
 
 .call-to-action button {
@@ -149,7 +191,8 @@ button, .call-to-action {
     cursor: pointer;
     border-width: 2px;
     border-color: #3882F6;
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    margin: 15px;
     border-color: #F9FAF8;
     border-style: solid;
 }
